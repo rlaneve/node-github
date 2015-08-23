@@ -1151,6 +1151,29 @@
             }
         },
 
+        "add-issue-labels": {
+            "url": "/repos/:user/:repo/issues/:number/labels",
+            "method": "POST",
+            "requestFormat": "raw",
+            "params": {
+                "$user": null,
+                "$repo": null,
+                "$number": null,
+                "$data": null
+            }
+        },
+
+        "remove-issue-label": {
+            "url": "/repos/:user/:repo/issues/:number/labels/:name",
+            "method": "DELETE",
+            "params": {
+                "$user": null,
+                "$repo": null,
+                "$number": null,
+                "$name": null
+            }
+        },
+
         "get-all-milestones": {
             "url": "/repos/:user/:repo/milestones",
             "method": "GET",
